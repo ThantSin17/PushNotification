@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015121897080",
+    "project_id": "testnotification-fa4ac",
+    "storage_bucket": "testnotification-fa4ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015121897080:android:a1f221586b2224fa11ef8d",
+        "android_client_info": {
+          "package_name": "com.stone.testnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015121897080-ets2ungbicvdlm5rlo876jge99vo25ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-a6smw30n41bws_3XGT64FTzULc4acJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015121897080-ets2ungbicvdlm5rlo876jge99vo25ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
