@@ -21,12 +21,14 @@ class NotificationService : FirebaseMessagingService() {
     }
 
     private fun sentNotification(remoteMessage: RemoteMessage) {
-        val title = remoteMessage.notification?.title
-        val body = remoteMessage.notification?.body
-        val data=remoteMessage.data
+        val title = remoteMessage.data["title"].toString()
+        val body = remoteMessage.data["body"].toString()
+        val data=remoteMessage.data["id"]
         Log.i("Data",data.toString())
+
         val intent= Intent(this,MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("data",data.toString())
         val pendingIntent= PendingIntent.getActivity(this,0,intent, PendingIntent.FLAG_ONE_SHOT)
 
         val builder = NotificationCompat.Builder(this, channelId)
